@@ -31,10 +31,11 @@ year = int(raw_input('year:'));
 month = int(raw_input('month:'));
 day = int(raw_input('day:'));
 
+month -= 1;
 sum_day = 0;
 for i in range(month):
     sum_day += return_days(month ,year);
-    month-=1;
-sum_day+=day;
+    month -= 1;
+sum_day += day;
 print sum_day
 
